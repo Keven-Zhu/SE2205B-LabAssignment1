@@ -126,7 +126,7 @@ public class Assignment1{
                 System.out.print(A[i][j]);
                 System.out.print(" ");
             }
-            System.out.print(" ");
+            System.out.println();
         }
     }
 
