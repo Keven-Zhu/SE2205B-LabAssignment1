@@ -131,7 +131,10 @@ public class Assignment1{
     }
 
     public int[][] readMatrix(String filename, int n) throws Exception {
-        File file = new File(filename);
+
+        String workingDir = (new File(System.getProperty("user.dir"))).getParent();
+
+        File file = new File(workingDir + "\\" + filename);
 
         BufferedReader br = new BufferedReader(new FileReader(file));
 
